@@ -4,7 +4,7 @@ void main (){
   int waterMelonWeight;
   scanf("%d",&waterMelonWeight);
   if(waterMelonWeight%2==0)
-  printf("\nYES");
+  printf("YES");
   else
-  printf("\nNO");
+  printf("NO");
 }
