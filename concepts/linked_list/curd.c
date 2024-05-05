@@ -90,12 +90,25 @@ void delete() {
   }
 }
 
+void count() {
+  struct Node *t;
+  int count = 0;
+
+  while (t != NULL) {
+    count++;
+    t = t->next;
+  }
+
+  printf("Total number of nodes in linked list is %d", count);
+}
+
 int main() {
   printf("CURD opteration in linked list\n");
   int option = 0;
 
   do {
     printf("Enter your choice\n1. create\n2. update\n3. delete\n4. display\n5. "
+           "count\n6. "
            "exit\n");
     scanf("%d", &option);
     switch (option) {
@@ -112,6 +125,9 @@ int main() {
       display();
       break;
     case 5:
+      count();
+      break;
+    case 6:
       exit(0);
       break;
     default:
